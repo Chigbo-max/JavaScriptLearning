@@ -1,11 +1,11 @@
-let number = 5
+let number = 10
 let factorial = 1
 
 for(let count = number; count > 1; count--){
 	factorial *= count;
-}
-if(factorial <= 1000){
-console.log(factorial);
+	if(factorial >= 1000) break;
+	console.log(factorial);
+
 }
 
 
