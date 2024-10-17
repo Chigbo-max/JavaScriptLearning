@@ -12,8 +12,5 @@ while (true){
 	if (sum >= number) break;
 			}
 	console.log("The sum is: " + sum);
-let x = 4;
-x += x++ - 5;
-console.log(x);
 
 
