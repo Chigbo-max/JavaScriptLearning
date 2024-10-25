@@ -55,6 +55,11 @@ const keys = {"groceries" : 100,
 	}
 console.log("Total Amount = " + totalAmount);
 
+let myArray = [2,4,6,8,10,12];
+//myArray.push(14, 16, 18, 20);
+myArray.splice(6,0,9);
+console.log(myArray);
+
 
 
 
