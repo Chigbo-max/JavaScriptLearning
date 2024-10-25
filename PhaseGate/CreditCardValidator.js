@@ -89,37 +89,37 @@ function determineCardValidity(numbers){
 		let sumOfNumbersGreaterThanFour = 0;
 			
 	for(let index = cardNumbers.length - 1; index >= 0; index--){
-			if(index % 2 == 0 && cardNumbers[index] <= 4){
-					sumOfNumbersLessThanOrEqualToFour +=cardNumbers[index] * 2;
-					}
+		if(index % 2 == 0 && cardNumbers[index] <= 4){
+			sumOfNumbersLessThanOrEqualToFour +=cardNumbers[index] * 2;
 				}
+			}
 
-			for(let index = cardNumbers.length - 1; index >= 0; index--){
-				if(index % 2 == 0 && cardNumbers[index] > 4 ){
+	for(let index = cardNumbers.length - 1; index >= 0; index--){
+		if(index % 2 == 0 && cardNumbers[index] > 4 ){
 					
-					sumOfNumbersGreaterThanFour +=(cardNumbers[index] * 2) - 9;
-					}
+			sumOfNumbersGreaterThanFour +=(cardNumbers[index] * 2) - 9;
 				}
+			}
 
-			let total = sumOfNumbersLessThanOrEqualToFour + sumOfNumbersGreaterThanFour;
+		let total = sumOfNumbersLessThanOrEqualToFour + sumOfNumbersGreaterThanFour;
 
 
-			let sumOfOddPositions = 0;
-			for(let index = cardNumbers.length - 1; index >= 0; index--){
-				if(index % 2 != 0){
-					sumOfOddPositions +=cardNumbers[index];
-					}
+		let sumOfOddPositions = 0;
+		for(let index = cardNumbers.length - 1; index >= 0; index--){
+			if(index % 2 != 0){
+				sumOfOddPositions +=cardNumbers[index];
 				}
+			}
 
-			let sumTotal = sumOfOddPositions + total;
+		let sumTotal = sumOfOddPositions + total;
 
 		
-			if(sumTotal % 10 == 0){
-				process.stdout.write("Credit Card Validity Status: Valid");
+		if(sumTotal % 10 == 0){
+			process.stdout.write("Credit Card Validity Status: Valid");
 				}
-			else{
+		else{
 
-				process.stdout.write("Credit Card Validity Status: Invalid");
+			process.stdout.write("Credit Card Validity Status: Invalid");
 		
 			}
 
@@ -127,5 +127,4 @@ function determineCardValidity(numbers){
 		}
 
 		
-
 
