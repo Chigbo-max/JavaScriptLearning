@@ -4,7 +4,7 @@ const userInput = require("prompt-sync");
 const prompt = userInput();
 				
 		
-let cardNumbers = prompt("Hello, kindly enter card details to verify ");
+let cardNumbers = prompt("Hello, kindly enter card details to verify: ");
 
 let splittedCardNumbers = cardNumbers.split("");
 
